@@ -47,9 +47,11 @@ a{
 padding: 40px;
 background-color: transparent;
 border: transparent 5px;
-font-size: 1.9em;
+font-size: 1.3em;
 gap: 1em;
 flex-grow: 1fr;
+align-self: stretch;
+
 
 
 }
