@@ -4,28 +4,29 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1em;
     
 }
-main{
-    margin: auto;
-}
+
 
 header{
+    width: auto;
+    margin: auto;
     background-color: #DDB892;
     box-shadow: 5px 5px 15px rgba(#5e4e3e62 );
 }
-img{
+.photo{
     padding-top: 20px;
 }
-nav>ul>li{
-    display: inline-block;
-    align-items: center;
+li{
+    display: inline-flex;   
+    align-items: baseline;
+
 }
 
 .menu1{
     text-align: center;
-   
-    
 }
 
     
@@ -33,9 +34,5 @@ nav>ul>li{
 footer{
     background-color: #DDB892;
     align-items: center;
-}
-.geral{
-    margin: auto;
-    padding: 0%;
-
+    
 }
