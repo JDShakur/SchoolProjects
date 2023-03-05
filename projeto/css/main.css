@@ -14,22 +14,51 @@
     font-family: "Montaga","rubrik";
 }
 
-header{
+
+
+/* elementos footer*/
+footer{
+    padding: 5px 5% 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    background-image: linear-gradient(#DDB892,#ecb695);
+}
+#textesp{
+    font-size: 1.2em;
+    text-align: center;
+    font-family:"Montaga","rubrik" ;
+}
+/* fim elementos footer*/
+
+/* elementos header */
+#header{
+    box-sizing: border-box;
+    height:120px;
     width: 100%;
-    max-height: 200px;
-    margin: 0;
-    box-shadow: 5px 5px 15px rgba(#5e4e3e62 );
-    clear: both;
+    padding: 1rem;
+    margin: 0;  
     background-image:linear-gradient(#DDB892,#d6b491) ;
     font-size: 1.2em;
-
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
 }
 .photo{
     padding:10px 5px;
     float: left;
 }
+
+
 li{
+    text-decoration: none;
+    padding: 0%;
     display: inline-flex;  
     flex-direction: row; 
     align-items: center;
@@ -41,17 +70,12 @@ a:hover{
      color: #ede0d4;
 }
 
-.menu1{
-    text-align: center;
-    margin: auto;
-}
 .buttontes{
-padding: 35px;
+padding: .5rem;
 background-color: transparent;
 border: transparent ;
 font-size: 1.3em;
 gap: 1em;
-flex-grow: 1fr;
 align-self: stretch;
 transition: transform 0.3s ease-in 0s;
 
@@ -61,47 +85,35 @@ transition: transform 0.3s ease-in 0s;
     transform: translateY(-3px);
 }
 
-.subbanner{
-    max-width: fit-content;
-}
- h1,p{
-    font-family:" Montaga","Mukta";
-}
-footer{
-    background-image: linear-gradient(#DDB892,#ecb695);
+/*Fim elementos header*/
 
-}
-.menu2>a{
-    width: fit-content;
-    align-items: center;
-    gap: 1fr;
-    display: inline;
-    text-align: center;
-    font-size: small;
 
-}
+
+
+/* elementos article e carrosel */
 article{   
-    max-width: 100%;
-    height: 70vh;
-    padding: 0px;
-    padding-top: 5px;
+    box-sizing: border-box;
+    padding: 5px 0 5px 0;
     margin: 0%;
     clear: both;
     text-align: center;
     background-color: #ffffff;
+} 
+h1,p{
+    font-family:" Montaga","Mukta";
 }
 
 .slider{
     margin: 0 auto;
-    width: 900px;
-    height: 500px;
-    overflow: visible;
-
+    height: 800px;
+    overflow: hidden;
+ 
 }
 .slides{
     width: 400%;
-    height: 500px;
+    height: 800px;
     display: flex;
+   
 }
 .slides input{
     display:none;
@@ -111,17 +123,18 @@ article{
     position: relative;
     transition: 0.3s;
     max-width: 100%;
-    max-height: 500px;
+    max-height: 800px;
     overflow: hidden;
 
 }
 .slide img{
     width:100%;
-    height: 500px;
+    height: 800px;
+    
 }
 .manual-navigation{
    position: absolute;
-   width: 800px;
+   width: 100%;
    margin-top: -40px;
    display: flex;
    justify-content: center; 
@@ -160,8 +173,8 @@ article{
 }
 .navigation-auto{
    position: absolute;
-   width: 800px; 
-   margin-top: 460px;
+   width: 100%; 
+   margin-top: 759px;
    display: flex;
    justify-content: center;
  
@@ -183,12 +196,106 @@ article{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #ffffff;
 }
+/* fim elementos article e carrosel */
+
+/*elementos Section 1*/
 section{
+    box-sizing: border-box;
     background-color: #7f3539;
     font-size: 1.3em;
-    width: max;
+    width: 100%;
     text-align: center;
     align-items: center;
     
+}
+/* fim elementos section1 */
+
+
+#btn-mobile{
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    
+    #btn-mobile{
+    display: block;
+    }
+   #menu{ 
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    right: 0px;
+    height:0%;
+    z-index: 1000;
+    overflow: hidden;
+    transition: 1.2s;
+    background-image:linear-gradient(#d6b491,#DDB892);
+   }
+   #nav.active #menu{
+    visibility: visible;
+    height:70vh;
+    padding-bottom: 0px;
+    overflow-y: auto;
+   }
+   #menu a{
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0,0,0, .05);
+   }
+   .buttontes{
+    display: flex;
+    font-size: 1em;
+    flex-direction: column;
+   }
+   li{
+    padding: 0%;
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;
+}
+#btn-mobile{
+display: flex;
+padding: .5rem 1rem;
+font-size: 1rem;
+border: none;
+background: none;
+cursor: pointer;
+gap: .5rem;
+}
+
+#hamburger{
+    color:rgba(139, 29, 1, 0.712);
+    display: block;
+    width: 25px;
+    border-top: 2px solid;
+    
+}
+#hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+#nav.active #hamburger{
+  border-top-color: transparent;
+
+
+}
+#nav.active #hamburger::after{
+    transform: rotate(135deg);
+    top: -7px;
+}
+#nav.active #hamburger::before{
+    transform: rotate(-135deg);  
+}
+#nav2{
+    visibility: hidden;
+}
 
 }

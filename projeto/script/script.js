@@ -14,3 +14,10 @@ function nextImage() {
     
     document.getElementById("radio"+count).checked = true;
 }
+const btnmobile = document.getElementById('btn-mobile');
+
+function toggleMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active')
+}
+btnmobile.addEventListener('click', toggleMenu)
