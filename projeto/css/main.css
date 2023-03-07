@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montaga&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&family=Mukta:wght@200;300;400;500;600&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
-
+/*elemento geral*/
 *{
     padding: 0%;
     margin: 0%;
@@ -14,7 +14,7 @@
     font-family: "Montaga","rubrik";
 }
 
-
+/* fim elemento geral*/
 
 /* elementos footer*/
 footer{
@@ -128,9 +128,7 @@ h1,p{
 
 }
 .slide img{
-    width:100%;
-    height: 800px;
-    
+    width:100%;    
 }
 .manual-navigation{
    position: absolute;
@@ -249,11 +247,13 @@ section{
     font-size: 1em;
     flex-direction: column;
    }
+   .buttontes:hover{
+    transform: none;
+    transition: none;
+}
    li{
-    padding: 0%;
-    display: flex;  
-    flex-direction: column; 
-    align-items: center;
+    display: block;  
+
 }
 #btn-mobile{
 display: flex;
@@ -294,8 +294,10 @@ gap: .5rem;
 #nav.active #hamburger::before{
     transform: rotate(-135deg);  
 }
+/*Fim menu hamburger*/
 #nav2{
-    visibility: hidden;
+    display: none;
 }
+
 
 }
