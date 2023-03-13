@@ -451,4 +451,7 @@ textarea{
     resize: none;
     margin: 5px;
 }
+.contato{
+    overflow: hidden;
+}
 /* fim página contato */
