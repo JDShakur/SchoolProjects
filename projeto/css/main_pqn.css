@@ -107,4 +107,10 @@ textarea{
     max-width: 400px;
 }
 /* fim página de contato */
+/*página de pedido */
+.contato-aside{
+    flex-direction: column;
+    align-items: center;
+}
+
 }

@@ -20,9 +20,15 @@ body{
     flex-direction: column;
     min-height: 100%;
 }
+h1,
 h2{
+    padding: 5px 0;
     font-family: 'Dancing Script', cursive;
     font-size: 1.6em;
+}
+p{
+ font-size: 1.2em;
+ font-family: 'Montaga Mukta';
 }
 
 /* fim elemento geral*/
@@ -113,16 +119,11 @@ a:hover {
 /* elementos article e carrosel */
 article {
     box-sizing: border-box;
-    padding: 5px 0 5px 0;
+    padding:0%;
     margin: 0%;
     clear: both;
     text-align: center;
     background-color: #ffffff;
-}
-
-h1,
-p {
-    font-family: " Montaga", "Mukta";
 }
 
 .slider {
@@ -244,6 +245,10 @@ section {
     font-size: 1.1em;
     width: 100%;
     text-align: center;
+}
+#IndexTxt{
+    margin: 0px 100px;
+
 }
 
 /* fim elementos section1 */
@@ -378,7 +383,7 @@ section {
 .paragrafo {
 
     background-color: #4b1818;
-    border: 5px solid rgba(0, 0, 0, 0.644);
+    border: 2px solid rgba(0, 0, 0, 0.459);
     font-size: 1.1em;
     color: #ffffff;
     padding: 5px 50px;
@@ -457,5 +462,69 @@ textarea{
 }
 .contato{
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #270c0c;
+    
+
 }
 /* fim página contato */
+/*página Sobre */
+.Pessoa_s{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     padding-top: 40px;
+    overflow: hidden;
+    align-items: baseline;
+    gap: 10px;
+}
+.Pessoa{
+    width: 400px;
+    padding-bottom: 20px;  
+    border: 2px solid rgba(0, 0, 0, .05);
+}
+#caixaTexto>h1{
+    font-size: 7.0em;
+    font-family: 'Dancing Script', cursive;
+    color:#4b1818;
+    cursor: auto;
+}
+#caixaTexto>p{
+    font-size: 2.0em;
+    font-family: 'Zilla Slab';
+   
+}
+/*fim da página Sobre */
+/* Página Pedido */
+.pedido_field{
+    width: fit-content;
+    display: grid;
+    justify-content: center;
+   padding: 15px 20px;
+   margin: 10px;
+   background-color: #fff;
+   box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.301);
+   border-radius: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.24);
+
+}
+#pedido-div{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    float: left;
+    width: fit-content;
+    
+}
+.caixa_pedido{
+    float: left;
+    display: grid;
+    margin-left: 20px;   
+    justify-items: center;
+   width: 400px;
+}
+.contato-aside{
+    display: flex;
+    justify-content: center;
+}
