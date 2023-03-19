@@ -528,3 +528,9 @@ textarea{
     display: flex;
     justify-content: center;
 }
+#btn-a{
+    color: #ede0d4;
+}
+#btn-a:hover{
+    color: #7f3539;
+}
