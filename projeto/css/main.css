@@ -61,7 +61,7 @@ footer {
     padding: 1rem;
     margin: 0;
     background-image: linear-gradient(#DDB892, #d6b491);
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,13 +82,11 @@ li {
     text-decoration: none;
     padding: 0%;
     display: inline-flex;
-    flex-direction: row;
-    align-items: center;
+ 
 }
 
 a {
     color: #7f3539;
-    ;
 }
 
 a:hover {
@@ -332,8 +330,6 @@ section {
 
     #nav.active #hamburger {
         border-top-color: transparent;
-
-
     }
 
     #nav.active #hamburger::after {
